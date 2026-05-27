@@ -89,6 +89,6 @@ projeto/
 <p align="center">
   Feito com dedicação e esforço.
 </p>
-=======
+
 # Projeto_integrador: Energia Solar e sua importância na indústria.
 
