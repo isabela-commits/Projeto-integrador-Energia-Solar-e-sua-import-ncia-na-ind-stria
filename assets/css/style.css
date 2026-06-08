@@ -14,10 +14,36 @@
     text-decoration: none !important;
 
 }
+
+
+.fa-solid{
+    font-size: 200px;
+    color: #f4b400;
+    text-align: center;
+    display: block;
+    margin: 30px 0;
+    animation: girar 10s linear infinite;
+    text-shadow:  0 0 20px gold;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
 body {
     font-family: 'Roboto';
     text-decoration: none;
-    font-size: 20px;
+    font-size:25px;
     line-height: 1.9;
     background-color:rgba(230, 230, 11, 0.842);
     color: #353434;
@@ -32,14 +58,17 @@ header {
 .menu-navegacao {
     background-color: #f0d76b;
     padding: 12px 0;
+    margin-top: 0;
     text-decoration: none;
     color: black;
     margin-right: 10px;
     z-index: 100;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
     border-bottom: 2px solid black;
+    
 
 }
 
@@ -55,6 +84,73 @@ header {
 }
 
 .menu-navegacao a:hover, .ativo {
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid rgb(14, 12, 10);
     text-decoration: none;
+}
 
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+.secao-amarela {
+    background-color: rgb(243, 243, 108);
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.conteudo-secao {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #8b2b2b;
+    text-align: left;
+    border-left: 4px solid #8b2b2b;
+    padding-left: 15px;
+    
+}
+
+.beneficios-lista {
+    list-style: none;
+    text-align: left;
+}
+
+.beneficios-lista li {
+    background-color: #f0d76b;
+    padding: 12px 18px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border-left: 5px solid #8b2b2b;
+}
+
+footer {
+    background-color: #f0d76b;
+    color: black;
+    text-align: center;
+    cursor: default;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 2px solid black;
+}
+
+.botao {
+    display: inline-block;
+    background-color: rgb(192, 192, 62);
+    color: black;
+    padding: 15px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px 0;
+}
+ 
+span {
+    font-weight: bold;
+    font-size: 15px;
+    color :black
+}
+ 

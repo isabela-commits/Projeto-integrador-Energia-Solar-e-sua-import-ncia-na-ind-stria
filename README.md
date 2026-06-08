@@ -74,9 +74,9 @@ projeto/
 - [x] Criar repositório
 - [x] Fazer README
 - [x] Estruturar páginas HTML
-- [ ] Adicionar CSS completo
-- [ ] Melhorar responsividade
-- [ ] Publicar projeto
+- [x] Adicionar CSS completo
+- [x] Melhorar responsividade
+- [x] Publicar projeto
 
 ---
 
