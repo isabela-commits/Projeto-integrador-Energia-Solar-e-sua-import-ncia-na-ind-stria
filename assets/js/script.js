@@ -13,7 +13,29 @@ const acoes = [{
 }, {
     icone: "🏘️",
     titulo: "Participar de Projetos Comunitários",
-    descricao: "Participar ou organizar projetos comunitários de energia solar, como a instalação de painéis solares em escolas, centros comunitários ou áreas públicas para demonstrar os benefícios da tecnologia."
+    descricao: "Participar ou organizar projetos comunitários de energia solar, como a instalação de painéis solares em escolas, centros comunitários ou áreas públicas para demonstrar os benefícios da tecnologia.",
 }]
 
-console.log(acoes[0])
+const container = document.querySelector('#container-acoes')
+
+for (let i = 0; i < acoes.length; i++) {
+    const item = acoes[i]
+    const div = document.createElement('div')
+    div.className = "acao-item"
+    div.innerHTML = `
+        <div class="acao-icone">${item.icone}</div>
+        <h3 class="acao-titulo">${item.titulo}</h3>
+        <p class= "acao-texto">${item.descricao}</p>
+    </div>
+    `
+    container.appendChild(div)
+}
+const nav = document.querySelector('.menu-navegacao')
+
+window.addEventListener('scroll',() => {
+    if (window.scrollY > 10) {
+        nav.style.opacity = '0.5'
+    } else {
+        nav.style.opacity = '1'
+    }
+})
