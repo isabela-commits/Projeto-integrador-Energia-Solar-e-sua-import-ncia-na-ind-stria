@@ -39,3 +39,20 @@ window.addEventListener('scroll',() => {
         nav.style.opacity = '1'
     }
 })
+
+const form = document.getElementById('formulario-adesao');
+const msg = document.getElementById('mensagem-retorno');
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    if (form.checkValidity()) {
+        const nome = document.getElementById('nome').value;
+        msg.textContent = `Obrigado, ${nome}, por se juntar a nós na luta por um futuro mais sustentável!`;
+        msg.className = 'mensagem-sucesso';
+        form.reset();
+    } else {
+        msg.textContent = 'Por favor, preencha todos os campos corretamente.';
+        msg.className = 'mensagem-erro';
+    }
+});
